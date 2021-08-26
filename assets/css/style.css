@@ -31,7 +31,7 @@
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px; } }
+    max-width: 1280px; } }
 
 @media (min-width: 1400px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
@@ -6652,3 +6652,56 @@ ul {
 a {
   text-decoration: none;
   color: #fff; }
+
+body {
+  background-color: #0f0d1e; }
+  body header {
+    background-color: #0f0d1e;
+    position: sticky;
+    top: 0;
+    z-index: 999; }
+    body header .nav {
+      display: flex;
+      justify-content: space-between; }
+      body header .nav .nav-item {
+        padding: 1rem;
+        cursor: pointer; }
+        body header .nav .nav-item:hover {
+          background-color: #1b1734;
+          border-radius: 0.3rem; }
+        body header .nav .nav-item.button-login {
+          border: 2px solid #322b5f;
+          border-radius: 0.3rem; }
+        body header .nav .nav-item.button {
+          background-color: #5b35d5;
+          border-radius: 0.3rem; }
+          body header .nav .nav-item.button:hover {
+            background-color: #7460ef; }
+  body .main .main-left h1 {
+    font-size: 2.76rem;
+    line-height: 140%;
+    font-weight: 600; }
+  body .main .main-left .button {
+    background-color: #5b35d5;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    width: 100%; }
+    body .main .main-left .button:hover {
+      background-color: #7460ef; }
+  body .main .main-left .main-left-bottom {
+    max-width: 100%; }
+    body .main .main-left .main-left-bottom .paraghraph {
+      color: #adaabf;
+      font-style: italic; }
+    body .main .main-left .main-left-bottom .main-images {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%; }
+      body .main .main-left .main-left-bottom .main-images .main-img {
+        opacity: 0.48;
+        height: 40px;
+        margin-right: 1.5rem; }
+  body .main .main-right .main-right-img {
+    width: 100%; }

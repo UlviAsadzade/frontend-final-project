@@ -1,0 +1,81 @@
+body{
+    background-color: $color-primary;
+    header{
+        background-color: $color-primary;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            .nav-item{
+                padding:1rem;
+                cursor: pointer;
+                &:hover{
+                    background-color: $color-secondary;
+                    border-radius: 0.3rem;
+                }
+                &.button-login{
+                    border: 2px solid $color-tertiary;
+                    border-radius: 0.3rem;
+                }
+                &.button{
+                    background-color: $color-fourth;
+                    border-radius: 0.3rem;
+                    &:hover{
+                        background-color:$color-button-hover;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .main{
+        .main-left{
+            h1{
+                font-size: 	2.76rem;
+                line-height: 140%;
+                font-weight: 600;
+            }
+            .button{
+                background-color: $color-fourth;
+                padding:1rem;
+                cursor: pointer;
+                border-radius: 0.3rem;
+                width: 100%;
+                &:hover{
+                    background-color:$color-button-hover;
+                }
+            }
+
+            .main-left-bottom{
+                max-width: 100%;
+                .paraghraph{
+                color: #adaabf;
+                font-style: italic;
+                }
+                .main-images{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    width: 100%;
+                    .main-img{
+                        opacity: 0.48;
+                        height: 40px;
+                        margin-right: 1.5rem;
+                    }
+
+                }
+                
+            }
+        }
+        .main-right{
+            .main-right-img{
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
