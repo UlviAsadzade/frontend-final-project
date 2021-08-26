@@ -32,15 +32,28 @@ body{
     }
 
     .main{
+        padding: 7.5rem 1rem 7.5rem 2.5rem;
         .main-left{
             h1{
                 font-size: 	2.76rem;
                 line-height: 140%;
                 font-weight: 600;
+                margin-bottom: 1.5rem;
+            }
+            p{
+                color: #adaabf;
+                font-size: 1.125rem;
+                font-weight: 300;
+                margin-bottom: 3.5rem;
+                line-height: 150%;
+
+
             }
             .button{
                 background-color: $color-fourth;
-                padding:1rem;
+                padding:1.2rem 2rem;
+                font-size: 1.1rem;
+                font-weight: 400;
                 cursor: pointer;
                 border-radius: 0.3rem;
                 width: 100%;
@@ -50,8 +63,9 @@ body{
             }
 
             .main-left-bottom{
-                max-width: 100%;
+                margin-top: 7.5rem;
                 .paraghraph{
+                    font-size: 0.875rem;
                 color: #adaabf;
                 font-style: italic;
                 }
@@ -64,6 +78,7 @@ body{
                         opacity: 0.48;
                         height: 40px;
                         margin-right: 1.5rem;
+                        margin-top: 1rem;
                     }
 
                 }
@@ -71,8 +86,27 @@ body{
             }
         }
         .main-right{
+            position: relative;
             .main-right-img{
                 width: 100%;
+            }
+            .main-right-icon{
+                background-color: rgba(134,125,243,.88);
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 42%;
+                width: 80px;
+                height: 80px;
+                margin-right: auto;
+                margin-left: auto;
+                padding: 20px;
+                border-radius: 100px;
+                opacity: 1;
+                transition: 250ms ease-in-out;
+                &:hover{
+                    background-color: $color-fourth;
+                }
             }
         }
         
