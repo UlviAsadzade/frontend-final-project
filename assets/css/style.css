@@ -23,11 +23,11 @@
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
-    max-width: 720px; } }
+    max-width: 767px; } }
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px; } }
+    max-width: 991px; } }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
@@ -6660,28 +6660,91 @@ body {
     position: sticky;
     top: 0;
     z-index: 999; }
-    body header .nav {
+    body header .hamburger-menu {
+      display: none; }
+    body header .header-logo {
+      max-width: 100%; }
+    body header .nav-list {
       display: flex;
-      justify-content: space-between; }
-      body header .nav .nav-item {
-        padding: 1rem;
-        cursor: pointer;
+      justify-content: space-between;
+      align-items: center; }
+      body header .nav-list li {
         white-space: nowrap; }
-        body header .nav .nav-item:hover {
-          background-color: #1b1734;
-          border-radius: 0.3rem; }
-        body header .nav .nav-item.button-login {
-          border: 2px solid #322b5f;
-          border-radius: 0.3rem;
-          min-width: min-content;
-          white-space: nowrap; }
-        body header .nav .nav-item.button {
-          background-color: #5b35d5;
-          border-radius: 0.3rem;
-          min-width: min-content;
-          white-space: nowrap; }
-          body header .nav .nav-item.button:hover {
-            background-color: #7460ef; }
+        body header .nav-list li .dropdown-small {
+          position: relative; }
+          body header .nav-list li .dropdown-small .small-box {
+            position: absolute;
+            display: flex;
+            display: none;
+            flex-direction: column;
+            background-color: #fff;
+            overflow: auto;
+            max-height: 85vh;
+            min-width: 100%;
+            margin-top: 0.5rem;
+            padding: 1.5rem 1rem;
+            border: 1px solid #dedcee;
+            border-radius: 0.5rem; }
+            body header .nav-list li .dropdown-small .small-box a {
+              padding: 0.625rem 1.25rem;
+              display: block;
+              color: #222; }
+              body header .nav-list li .dropdown-small .small-box a:hover {
+                color: #5b35d5; }
+            body header .nav-list li .dropdown-small .small-box.active {
+              display: block;
+              transition: .5s; }
+        body header .nav-list li .dropdown-big {
+          position: relative; }
+          body header .nav-list li .dropdown-big .big-box {
+            position: absolute;
+            display: flex;
+            display: none;
+            flex-direction: column;
+            background-color: #fff;
+            overflow: auto;
+            max-height: 85vh;
+            min-width: 100%;
+            margin-top: 0.5rem;
+            padding: 1.5rem 1rem;
+            border: 1px solid #dedcee;
+            border-radius: 8px; }
+            body header .nav-list li .dropdown-big .big-box .big-box-headers {
+              margin-bottom: 0.5rem; }
+            body header .nav-list li .dropdown-big .big-box a {
+              padding: 0.625rem 1.5rem;
+              display: block;
+              color: #222; }
+              body header .nav-list li .dropdown-big .big-box a:hover {
+                color: #5b35d5; }
+            body header .nav-list li .dropdown-big .big-box .box-title {
+              color: #0f0d1e;
+              font-size: 1.125rem;
+              line-height: 1.625rem;
+              font-weight: 600; }
+            body header .nav-list li .dropdown-big .big-box a.box-title {
+              padding-top: 0;
+              padding-bottom: 0.25rem;
+              padding-left: 0; }
+            body header .nav-list li .dropdown-big .big-box.active {
+              display: block; }
+        body header .nav-list li .nav-item {
+          padding: 1rem;
+          cursor: pointer;
+          margin-left: 0.5rem; }
+          body header .nav-list li .nav-item:hover {
+            background-color: #1b1734;
+            border-radius: 0.3rem; }
+          body header .nav-list li .nav-item.button-login {
+            border: 2px solid #322b5f;
+            border-radius: 0.3rem;
+            min-width: min-content; }
+          body header .nav-list li .nav-item.button {
+            background-color: #5b35d5;
+            border-radius: 0.3rem;
+            min-width: min-content; }
+            body header .nav-list li .nav-item.button:hover {
+              background-color: #7460ef; }
   body .main {
     padding: 7.5rem 1rem 7.5rem 2.5rem; }
     body .main .main-left h1 {

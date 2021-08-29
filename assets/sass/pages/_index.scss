@@ -5,35 +5,118 @@ body{
         position: sticky;
         top: 0;
         z-index: 999;
-        .nav{
+        .hamburger-menu{
+            display: none;
+        }
+        .header-logo{
+            max-width: 100%;
+        }
+        .nav-list{
             display: flex;
             justify-content: space-between;
-            .nav-item{
-                padding:1rem;
-                cursor: pointer;
+            align-items: center;
+            li{
                 white-space: nowrap;
-                &:hover{
-                    background-color: $color-secondary;
-                    border-radius: 0.3rem;
+                .dropdown-small{
+                    position: relative;
+                    .small-box{
+                        position: absolute;
+                        display: flex;
+                        display: none;
+                        flex-direction: column;
+                        background-color: $color-white;
+                        overflow: auto;
+                        max-height: 85vh;
+                        min-width: 100%;
+                        margin-top: 0.5rem;
+                        padding: 1.5rem 1rem;
+                        border: 1px solid #dedcee;
+                        border-radius: 0.5rem;
+                        a{
+                            padding: 0.625rem 1.25rem;
+                            display: block;
+                            color: #222;
+                            &:hover{
+                                color: $color-fourth;
+                            }
+                        }
+                        &.active{
+                            display: block;
+                            transition: .5s;
+                        }
+                    }
                 }
-                &.button-login{
-                    border: 2px solid $color-tertiary;
-                    border-radius: 0.3rem;
-                    min-width: min-content;
-                    white-space: nowrap;
+                .dropdown-big{
+                    position: relative;
+                    .big-box{
+                        position: absolute;
+                        display: flex;
+                        display: none;
+                        flex-direction: column;
+                        background-color: $color-white;
+                        overflow: auto;
+                        max-height: 85vh;
+                        min-width: 100%;
+                        margin-top: 0.5rem;
+                        padding: 1.5rem 1rem;
+                        border: 1px solid #dedcee;
+                        border-radius: 8px;
+                        .big-box-headers{
+                            margin-bottom: 0.5rem;
+                        }
+                        a{
+                            padding: 0.625rem 1.5rem;
+                            display: block;
+                            color: #222;
+                            &:hover{
+                                color: $color-fourth;
+                            }
+                        }
+                        .box-title{
+                            color: #0f0d1e;
+                            font-size: 1.125rem;
+                            line-height: 1.625rem;
+                            font-weight: 600;
+                        }
+                        a.box-title{
+                            padding-top: 0;
+                            padding-bottom: 0.25rem;
+                            padding-left: 0;
+
+                        }
+                        &.active{
+                            display: block;
+                        }
+                    }
                 }
-                &.button{
-                    background-color: $color-fourth;
-                    border-radius: 0.3rem;
-                    min-width: min-content;
-                    white-space: nowrap;
-
-
+               
+                .nav-item{
+                    padding:1rem;
+                    cursor: pointer;
+                    margin-left: 0.5rem;
+                    
                     &:hover{
-                        background-color:$color-button-hover;
+                        background-color: $color-secondary;
+                        border-radius: 0.3rem;
+                    }
+                    &.button-login{
+                        border: 2px solid $color-tertiary;
+                        border-radius: 0.3rem;
+                        min-width: min-content;
+                    }
+                    &.button{
+                        background-color: $color-fourth;
+                        border-radius: 0.3rem;
+                        min-width: min-content;
+    
+    
+                        &:hover{
+                            background-color:$color-button-hover;
+                        }
                     }
                 }
             }
+            
             
         }
     }
