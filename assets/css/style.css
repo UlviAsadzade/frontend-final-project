@@ -17,15 +17,15 @@
   margin-right: auto;
   margin-left: auto; }
 
-@media (min-width: 320px) {
+@media (min-width: 250px) {
   .container, .container-sm {
-    max-width: 540px; } }
+    max-width: 479px; } }
 
-@media (min-width: 576px) {
+@media (min-width: 479px) {
   .container, .container-sm, .container-md {
     max-width: 767px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .container, .container-sm, .container-md, .container-lg {
     max-width: 991px; } }
 
@@ -85,7 +85,7 @@
   flex: 0 0 auto;
   width: 16.66667%; }
 
-@media (min-width: 320px) {
+@media (min-width: 250px) {
   .col-sm {
     flex: 1 0 0%; }
   .row-cols-sm-auto > * {
@@ -110,7 +110,7 @@
     flex: 0 0 auto;
     width: 16.66667%; } }
 
-@media (min-width: 576px) {
+@media (min-width: 479px) {
   .col-md {
     flex: 1 0 0%; }
   .row-cols-md-auto > * {
@@ -135,7 +135,7 @@
     flex: 0 0 auto;
     width: 16.66667%; } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .col-lg {
     flex: 1 0 0%; }
   .row-cols-lg-auto > * {
@@ -343,7 +343,7 @@
 .gy-5 {
   --bs-gutter-y: 3rem; }
 
-@media (min-width: 320px) {
+@media (min-width: 250px) {
   .col-sm-auto {
     flex: 0 0 auto;
     width: auto; }
@@ -444,7 +444,7 @@
   .gy-sm-5 {
     --bs-gutter-y: 3rem; } }
 
-@media (min-width: 576px) {
+@media (min-width: 479px) {
   .col-md-auto {
     flex: 0 0 auto;
     width: auto; }
@@ -545,7 +545,7 @@
   .gy-md-5 {
     --bs-gutter-y: 3rem; } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .col-lg-auto {
     flex: 0 0 auto;
     width: auto; }
@@ -1306,7 +1306,7 @@
 .ps-5 {
   padding-left: 3rem !important; }
 
-@media (min-width: 320px) {
+@media (min-width: 250px) {
   .d-sm-inline {
     display: inline !important; }
   .d-sm-inline-block {
@@ -1622,7 +1622,7 @@
   .ps-sm-5 {
     padding-left: 3rem !important; } }
 
-@media (min-width: 576px) {
+@media (min-width: 479px) {
   .d-md-inline {
     display: inline !important; }
   .d-md-inline-block {
@@ -1938,7 +1938,7 @@
   .ps-md-5 {
     padding-left: 3rem !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .d-lg-inline {
     display: inline !important; }
   .d-lg-inline-block {
@@ -3004,19 +3004,19 @@
   top: 0;
   z-index: 1020; }
 
-@media (min-width: 320px) {
+@media (min-width: 250px) {
   .sticky-sm-top {
     position: sticky;
     top: 0;
     z-index: 1020; } }
 
-@media (min-width: 576px) {
+@media (min-width: 479px) {
   .sticky-md-top {
     position: sticky;
     top: 0;
     z-index: 1020; } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .sticky-lg-top {
     position: sticky;
     top: 0;
@@ -3996,7 +3996,7 @@
 .invisible {
   visibility: hidden !important; }
 
-@media (min-width: 320px) {
+@media (min-width: 250px) {
   .float-sm-start {
     float: left !important; }
   .float-sm-end {
@@ -4336,7 +4336,7 @@
   .text-sm-center {
     text-align: center !important; } }
 
-@media (min-width: 576px) {
+@media (min-width: 479px) {
   .float-md-start {
     float: left !important; }
   .float-md-end {
@@ -4676,7 +4676,7 @@
   .text-md-center {
     text-align: center !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .float-lg-start {
     float: left !important; }
   .float-lg-end {
@@ -6884,17 +6884,34 @@ body {
           cursor: pointer; }
   body .main {
     padding: 7.5rem 1rem 7.5rem 2.5rem; }
+    @media screen and (max-width: 767px) {
+      body .main {
+        padding: 40px 24px; } }
+    @media screen and (max-width: 767px) {
+      body .main .main-left {
+        padding: 0; } }
     body .main .main-left h1 {
       font-size: 2.76rem;
       line-height: 140%;
       font-weight: 600;
-      margin-bottom: 1.5rem; }
+      margin-bottom: 1.5rem;
+      max-width: 720px; }
+      @media screen and (max-width: 991px) {
+        body .main .main-left h1 {
+          font-size: 40px; } }
+      @media screen and (max-width: 767px) {
+        body .main .main-left h1 {
+          font-size: 42px; } }
+      @media screen and (max-width: 479px) {
+        body .main .main-left h1 {
+          font-size: 32px; } }
     body .main .main-left p {
       color: #adaabf;
       font-size: 1.125rem;
       font-weight: 300;
       margin-bottom: 3.5rem;
-      line-height: 150%; }
+      line-height: 150%;
+      max-width: 720px; }
     body .main .main-left .button {
       background-color: #5b35d5;
       padding: 1.2rem 2rem;
@@ -6907,6 +6924,9 @@ body {
         background-color: #7460ef; }
     body .main .main-left .main-left-bottom {
       margin-top: 7.5rem; }
+      @media screen and (max-width: 767px) {
+        body .main .main-left .main-left-bottom {
+          margin-top: 64px; } }
       body .main .main-left .main-left-bottom .paraghraph {
         font-size: 0.875rem;
         color: #adaabf;
@@ -6944,34 +6964,78 @@ body {
   body .global {
     background-color: #1b1734;
     padding: 8.5rem 4rem; }
+    @media screen and (max-width: 991px) {
+      body .global {
+        padding: 80px 48px; } }
+    @media screen and (max-width: 767px) {
+      body .global {
+        padding: 80px 40px; } }
+    @media screen and (max-width: 479px) {
+      body .global {
+        padding: 60px 24px; } }
     body .global .global-1 h2 {
-      width: 71%;
-      font-size: 2rem;
+      font-size: 40px;
       line-height: 140%;
       font-weight: 600; }
+      @media screen and (max-width: 991px) {
+        body .global .global-1 h2 {
+          font-size: 34px; } }
+      @media screen and (max-width: 479px) {
+        body .global .global-1 h2 {
+          font-size: 26px;
+          margin-bottom: 30px; } }
     body .global .global-1 p {
       font-size: 1.125rem;
       font-weight: 300;
       line-height: 150%; }
+      @media screen and (max-width: 479px) {
+        body .global .global-1 p {
+          font-size: 16px; } }
     body .global .global-2 {
       background-color: #5b35d5;
       margin-top: 8.75rem;
       padding: 4rem 4rem;
       border-radius: 1rem; }
-      body .global .global-2 .global-2-left {
-        padding-right: 6.5rem; }
-        body .global .global-2 .global-2-left h2 {
-          font-weight: 600;
-          font-size: 2.5rem;
-          line-height: 130%;
-          margin: 1.5rem 0; }
-        body .global .global-2 .global-2-left p {
-          font-size: 1.125rem;
-          font-weight: 300;
-          line-height: 150%;
-          margin-bottom: 1.5rem; }
+      @media screen and (max-width: 991px) {
+        body .global .global-2 {
+          padding: 40px 16px 40px 40px; } }
+      @media screen and (max-width: 767px) {
+        body .global .global-2 {
+          padding-right: 40px; } }
+      @media screen and (max-width: 479px) {
+        body .global .global-2 {
+          padding: 24px; } }
+      @media screen and (max-width: 479px) {
+        body .global .global-2 .global-2-left {
+          padding-right: 0; } }
+      body .global .global-2 .global-2-left h2 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 130%;
+        margin: 1.5rem 0; }
+        @media screen and (max-width: 991px) {
+          body .global .global-2 .global-2-left h2 {
+            font-size: 27px; } }
+        @media screen and (max-width: 767px) {
+          body .global .global-2 .global-2-left h2 {
+            font-size: 32px;
+            line-height: 140%; } }
+        @media screen and (max-width: 479px) {
+          body .global .global-2 .global-2-left h2 {
+            font-size: 24px; } }
+      body .global .global-2 .global-2-left p {
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: 150%;
+        margin-bottom: 1.5rem; }
+        @media screen and (max-width: 479px) {
+          body .global .global-2 .global-2-left p {
+            font-size: 16px; } }
       body .global .global-2 .global-img {
         width: 100%; }
+        @media screen and (max-width: 991px) {
+          body .global .global-2 .global-img {
+            margin-top: 40px; } }
   body .feature {
     background-color: #0f0d1e;
     padding: 8.5rem 4rem; }
@@ -7311,9 +7375,9 @@ body {
               line-height: 150%;
               font-weight: 400;
               cursor: pointer; }
-            @media screen and (max-width: 576px) {
+            @media screen and (max-width: 479px) {
               body footer .footer-box .footer-main .footer-right .form {
-                width: 130%; } }
+                width: 100%; } }
           @media screen and (max-width: 991px) {
             body footer .footer-box .footer-main .footer-right {
               margin-top: 96px; } }

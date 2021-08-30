@@ -293,12 +293,28 @@ body{
 
     .main{
         padding: 7.5rem 1rem 7.5rem 2.5rem;
+        @media screen and (max-width: 767px){
+            padding: 40px 24px;
+        }
         .main-left{
+            @media screen and (max-width: 767px){
+                padding: 0;
+            }
             h1{
                 font-size: 	2.76rem;
                 line-height: 140%;
                 font-weight: 600;
                 margin-bottom: 1.5rem;
+                max-width: 720px;
+                @media screen and (max-width: 991px){
+                    font-size: 40px;
+                }
+                @media screen and (max-width: 767px){
+                    font-size: 42px;
+                }
+                @media screen and (max-width: 479px){
+                    font-size: 32px;
+                }
             }
             p{
                 color: #adaabf;
@@ -306,6 +322,7 @@ body{
                 font-weight: 300;
                 margin-bottom: 3.5rem;
                 line-height: 150%;
+                max-width: 720px;
 
 
             }
@@ -320,10 +337,14 @@ body{
                 &:hover{
                     background-color:$color-button-hover;
                 }
+                
             }
 
             .main-left-bottom{
                 margin-top: 7.5rem;
+                @media screen and (max-width: 767px){
+                    margin-top: 64px;
+                }
                 .paraghraph{
                     font-size: 0.875rem;
                 color: #adaabf;
@@ -375,17 +396,35 @@ body{
     .global{
         background-color: $color-secondary;
         padding: 8.5rem 4rem;
+        @media screen and(max-width: 991px){
+            padding: 80px 48px;
+        }
+        @media screen and(max-width: 767px){
+            padding: 80px 40px;
+        }
+        @media screen and(max-width: 479px){
+            padding: 60px 24px;
+        }
         .global-1{
             h2{
-                width: 71%;
-                font-size: 2rem;
+                font-size: 40px;
                 line-height: 140%;
                 font-weight: 600;
+                @media screen and(max-width: 991px){
+                    font-size: 34px;
+                }
+                @media screen and(max-width: 479px){
+                    font-size: 26px;
+                    margin-bottom: 30px;
+                }
             }
             p{
                 font-size: 1.125rem;
                 font-weight: 300;
                 line-height: 150%;
+                @media screen and(max-width: 479px){
+                    font-size: 16px;
+                }
             }
         }
         .global-2{
@@ -393,23 +432,50 @@ body{
             margin-top: 8.75rem;
             padding: 4rem 4rem;
             border-radius: 1rem;
+            @media screen and(max-width: 991px){
+                padding: 40px 16px 40px 40px;
+            }
+            @media screen and(max-width: 767px){
+                padding-right: 40px;
+            }
+            @media screen and(max-width: 479px){
+                padding: 24px;
+            }
             .global-2-left{
-                padding-right: 6.5rem;
+                @media screen and(max-width: 479px){
+                padding-right: 0;
+            }
                 h2{
                     font-weight: 600;
-                    font-size: 2.5rem;
+                    font-size: 40px;
                     line-height: 130%;
                     margin: 1.5rem 0;
+                    @media screen and(max-width: 991px){
+                        font-size: 27px;
+                    }
+                    @media screen and(max-width: 767px){
+                        font-size: 32px;
+                        line-height: 140%;
+                    }
+                    @media screen and(max-width: 479px){
+                        font-size: 24px;
+                    }
                 }
                 p{
                     font-size: 1.125rem;
                     font-weight: 300;
                     line-height: 150%;
                     margin-bottom: 1.5rem;
+                    @media screen and(max-width: 479px){
+                        font-size: 16px;
+                    }
                 }
             }
             .global-img{
                 width: 100%;
+                @media screen and(max-width: 991px){
+                    margin-top: 40px;
+                }
             }
             
 
@@ -857,8 +923,8 @@ body{
                             cursor: pointer;
                             
                         }
-                        @media screen and (max-width: 576px){
-                            width: 130%;
+                        @media screen and (max-width: 479px){
+                            width: 100%;
                         }
                     }
                     @media screen and (max-width: 991px){
