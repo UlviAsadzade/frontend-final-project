@@ -7038,16 +7038,37 @@ body {
             margin-top: 40px; } }
   body .feature {
     background-color: #0f0d1e;
-    padding: 8.5rem 4rem; }
+    padding: 140px 80px; }
+    @media screen and (max-width: 991px) {
+      body .feature {
+        padding: 80px 48px; } }
+    @media screen and (max-width: 767px) {
+      body .feature {
+        padding: 100px 24px 80px; } }
+    @media screen and (max-width: 479px) {
+      body .feature {
+        padding: 60px 24px; } }
     body .feature .feature-box {
-      margin-bottom: 7.5rem;
+      margin-bottom: 80px;
       margin-left: auto;
       margin-right: auto;
-      padding: 7.5rem 4rem;
+      padding: 100px 48px 100px 64px;
       border-radius: 1rem;
       background-color: #1b1734; }
+      @media screen and (max-width: 767px) {
+        body .feature .feature-box {
+          padding-top: 48px;
+          padding-bottom: 48px;
+          padding-left: 48px; } }
+      @media screen and (max-width: 479px) {
+        body .feature .feature-box {
+          margin-bottom: 40px;
+          padding: 4px 24px 24px; } }
       body .feature .feature-box .feature-box-left {
         padding-right: 5rem; }
+        @media screen and (max-width: 991px) {
+          body .feature .feature-box .feature-box-left {
+            padding-right: 0; } }
         body .feature .feature-box .feature-box-left h4 {
           margin-bottom: 16px;
           font-family: "Rajdhani",sans-serif;
@@ -7062,11 +7083,20 @@ body {
             color: #f18c33; }
           body .feature .feature-box .feature-box-left h4.blue-h4 {
             color: #33abd1; }
+          @media screen and (max-width: 479px) {
+            body .feature .feature-box .feature-box-left h4 {
+              margin-top: 20px; } }
         body .feature .feature-box .feature-box-left h2 {
-          font-size: 2rem;
+          font-size: 40px;
           line-height: 140%;
           font-weight: 600;
           margin-bottom: 1.5rem; }
+          @media screen and (max-width: 991px) {
+            body .feature .feature-box .feature-box-left h2 {
+              font-size: 34px; } }
+          @media screen and (max-width: 479px) {
+            body .feature .feature-box .feature-box-left h2 {
+              font-size: 26px; } }
         body .feature .feature-box .feature-box-left p {
           margin-bottom: 2rem;
           color: #adaabf;
@@ -7074,21 +7104,31 @@ body {
           font-weight: 300;
           line-height: 150%; }
         body .feature .feature-box .feature-box-left a {
+          display: block;
+          width: max-content;
+          max-width: 100%;
           padding: 0.625rem 1rem;
           border: 1px solid #adaabf;
           border-radius: 0.25rem;
           display: flex;
-          align-items: center;
-          width: max-content; }
+          align-items: center; }
+          body .feature .feature-box .feature-box-left a span {
+            display: block; }
           body .feature .feature-box .feature-box-left a .right-arrow-icon {
-            padding-left: 0.25rem; }
+            padding-left: 0.25rem;
+            color: white; }
           body .feature .feature-box .feature-box-left a:hover {
             border-color: #fff;
             background-color: rgba(255, 255, 255, 0.04);
             color: #fff; }
+      @media screen and (max-width: 991px) {
+        body .feature .feature-box .feature-box-right {
+          margin-top: 40px; } }
       body .feature .feature-box .feature-box-right .feature-box-image {
-        width: 100%;
-        border-radius: 0.5rem; }
+        max-width: 100%;
+        border-radius: 0.5rem;
+        border: 1px transparent;
+        display: inline-block; }
   body .team {
     background-color: #1b1734;
     padding: 8.5rem 4rem; }
