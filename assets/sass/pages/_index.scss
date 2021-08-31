@@ -834,25 +834,45 @@ body{
 
     .book-demo{
         background-color: $color-primary;
-        padding: 10rem;
+        padding: 160px 105px;
         text-align: center;
+        @media screen and (max-width: 479px){
+            text-align: left;
+        }
+        @media screen and (max-width:991px){
+            padding: 80px 40px;
+        }
+        @media screen and (max-width:767px){
+            padding: 100px 48px;
+        }
+        @media screen and (max-width: 479px){
+            padding-left: 22px;
+            padding-right: 22px;
+        }
         h2{
             display: block;
-            font-size: 2.2rem;
+            font-size: 35px;
             line-height: 120%;
             font-weight: 600;
             margin-bottom: 2.5rem;
-
+            @media screen and (max-width:767px){
+                font-size: 30px;
+            }
         }
         .button{
                 display: inline-block;
                 background-color: $color-fourth;
-                padding:1.2rem 2rem;
-                font-size: 1.1rem;
+                padding: 16px 32px;
+                font-size: 17px;
                 font-weight: 400;
                 cursor: pointer;
                 border-radius: 0.3rem;
-                width: max-content;
+                min-width: 120px;
+                text-align: center;
+                @media screen and (max-width: 479px){
+                    min-width: 100%;
+                }
+                // width: max-content;
                 &:hover{
                     background-color:$color-button-hover;
                 }

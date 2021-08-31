@@ -7332,23 +7332,43 @@ body {
             transition: opacity 300ms ease 0s; }
   body .book-demo {
     background-color: #0f0d1e;
-    padding: 10rem;
+    padding: 160px 105px;
     text-align: center; }
+    @media screen and (max-width: 479px) {
+      body .book-demo {
+        text-align: left; } }
+    @media screen and (max-width: 991px) {
+      body .book-demo {
+        padding: 80px 40px; } }
+    @media screen and (max-width: 767px) {
+      body .book-demo {
+        padding: 100px 48px; } }
+    @media screen and (max-width: 479px) {
+      body .book-demo {
+        padding-left: 22px;
+        padding-right: 22px; } }
     body .book-demo h2 {
       display: block;
-      font-size: 2.2rem;
+      font-size: 35px;
       line-height: 120%;
       font-weight: 600;
       margin-bottom: 2.5rem; }
+      @media screen and (max-width: 767px) {
+        body .book-demo h2 {
+          font-size: 30px; } }
     body .book-demo .button {
       display: inline-block;
       background-color: #5b35d5;
-      padding: 1.2rem 2rem;
-      font-size: 1.1rem;
+      padding: 16px 32px;
+      font-size: 17px;
       font-weight: 400;
       cursor: pointer;
       border-radius: 0.3rem;
-      width: max-content; }
+      min-width: 120px;
+      text-align: center; }
+      @media screen and (max-width: 479px) {
+        body .book-demo .button {
+          min-width: 100%; } }
       body .book-demo .button:hover {
         background-color: #7460ef; }
   body .blog {
