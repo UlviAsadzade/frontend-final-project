@@ -7211,7 +7211,17 @@ body {
             margin-bottom: 16px; } }
   body .testimonials {
     background-color: #5b35d5;
-    padding: 8.5rem 4rem; }
+    padding: 140px 48px; }
+    @media screen and (max-width: 991px) {
+      body .testimonials {
+        padding: 80px 48px; } }
+    @media screen and (max-width: 767px) {
+      body .testimonials {
+        padding-top: 60px;
+        padding-bottom: 60px; } }
+    @media screen and (max-width: 479px) {
+      body .testimonials {
+        padding: 40px 20px; } }
     body .testimonials .testimonials-header {
       margin-bottom: 4rem; }
       body .testimonials .testimonials-header h2 {
@@ -7219,18 +7229,31 @@ body {
         text-align: center;
         font-weight: 600;
         line-height: 120%; }
+        @media screen and (max-width: 767px) {
+          body .testimonials .testimonials-header h2 {
+            font-size: 30px; } }
     body .testimonials .testimonials-body {
-      margin-top: 3rem;
-      max-width: 62.5rem;
+      margin-top: 48px;
+      max-width: none;
       margin-left: auto;
       margin-right: auto; }
       body .testimonials .testimonials-body .testimonials-persons {
         display: flex;
         justify-content: center; }
+        @media screen and (max-width: 991px) {
+          body .testimonials .testimonials-body .testimonials-persons {
+            display: flex;
+            justify-content: space-between; } }
+        @media screen and (max-width: 479px) {
+          body .testimonials .testimonials-body .testimonials-persons {
+            display: flex;
+            justify-content: left;
+            width: 50%; } }
         body .testimonials .testimonials-body .testimonials-persons a {
           display: flex;
-          margin: 0 1rem;
-          padding: 1.5rem 2rem;
+          margin-right: 16px;
+          margin-left: 16px;
+          padding: 24px 32px;
           align-items: center;
           border-style: none none solid;
           border-bottom-width: 2px;
@@ -7239,22 +7262,53 @@ body {
           background-color: transparent;
           opacity: .64;
           cursor: pointer; }
+          @media screen and (max-width: 991px) {
+            body .testimonials .testimonials-body .testimonials-persons a {
+              margin-left: 0;
+              padding-left: 16px; } }
+          @media screen and (max-width: 767px) {
+            body .testimonials .testimonials-body .testimonials-persons a {
+              margin-left: 0;
+              padding-left: 8px; } }
+          @media screen and (max-width: 479px) {
+            body .testimonials .testimonials-body .testimonials-persons a {
+              flex-direction: column; } }
           body .testimonials .testimonials-body .testimonials-persons a .person-img {
-            height: 3.75rem;
-            margin-right: 0.5rem;
+            display: inline-block;
+            height: 60px;
+            margin-right: 16px;
             border-radius: 0; }
+            @media screen and (max-width: 767px) {
+              body .testimonials .testimonials-body .testimonials-persons a .person-img {
+                height: 48px; } }
           body .testimonials .testimonials-body .testimonials-persons a .person-name {
-            font-size: 1.125rem;
+            font-size: 18px;
             font-weight: 500; }
+            @media screen and (max-width: 767px) {
+              body .testimonials .testimonials-body .testimonials-persons a .person-name {
+                font-size: 16px;
+                margin-top: 3px; } }
           body .testimonials .testimonials-body .testimonials-persons a.active {
             opacity: 1;
             border-bottom-color: #ff9a83; }
       body .testimonials .testimonials-body .testimonials-box {
         background-color: #fff;
         padding: 80px 120px 64px;
-        border-radius: 1rem;
+        border-radius: 16px;
         position: relative;
         overflow: hidden; }
+        @media screen and (max-width: 991px) {
+          body .testimonials .testimonials-body .testimonials-box {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0; } }
+        @media screen and (max-width: 767px) {
+          body .testimonials .testimonials-body .testimonials-box {
+            padding: 48px 48px 32px; } }
+        @media screen and (max-width: 479px) {
+          body .testimonials .testimonials-body .testimonials-box {
+            padding-right: 32px;
+            padding-bottom: 24px;
+            padding-left: 32px; } }
         body .testimonials .testimonials-body .testimonials-box .person-text {
           position: relative;
           max-width: 720px;

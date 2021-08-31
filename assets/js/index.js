@@ -58,11 +58,15 @@ hamburgerMenu.addEventListener('click', function(){
 })
 
 clickSmall.addEventListener('click', function(){
+    openBig.classList.remove('active');
+    menuIconBig.classList.remove('active');
     openSmall.classList.toggle('active');
     menuIconSmall.classList.toggle('active')
 })
 
 clickBig.addEventListener('click', function(){
+    openSmall.classList.remove('active');
+    menuIconSmall.classList.remove('active')
     openBig.classList.toggle('active');
     menuIconBig.classList.toggle('active');
 })
