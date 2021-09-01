@@ -370,7 +370,7 @@ body{
             .main-right-img{
                 width: 100%;
             }
-            .main-right-icon{
+            .play-icon{
                 background-color: rgba(134,125,243,.88);
                 position: absolute;
                 left: 0;
@@ -388,6 +388,63 @@ body{
                     background-color: $color-fourth;
                 }
             }
+            .modal {
+                position: fixed;
+                top: 18%;
+                left: 20%;
+                height: 50%;
+                width: 70%;
+                display: grid;
+                place-items: center;
+                background: rgba(0, 0, 0, 0.411);
+                opacity: 0;
+                pointer-events: none;
+                visibility: hidden;
+                transition: all .3s ease-out;
+
+                .modal-container {
+                    width: 100%;
+                    position: relative;
+                    padding: 0 1rem;
+                    max-width: 80rem;
+                    #close {
+                        font-size: 3rem;
+                        float: right;
+                        color: $color-white;
+                        cursor: pointer;
+                        img{
+                            width: 35px;
+                            height: 35px;
+                            filter: invert(1);
+                        }
+                    }
+
+                    .iframe-container {
+                        position: relative;
+                        overflow: hidden;
+                        width: 100%;
+                        padding-top: 56.25%;
+
+                        iframe {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                }
+            }
+
+            .modal.show {
+                visibility: visible;
+                pointer-events: all;
+                opacity: 1;
+            }
+
         }
         
     }
