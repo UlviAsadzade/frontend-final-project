@@ -289,153 +289,269 @@ body{
         }
         
     }
-    .remote-employee{
+
+    .payroll-main{
         padding: 80px;
-        background-color: #ebeaf5;
+        @media screen and ( max-width:767px){
+            padding: 40px;
+        }
+        @media screen and ( max-width:479px){
+            padding: 40px 24px;
+        }
+        .payroll-main-text{
+            @media screen and ( max-width:991px){
+                margin-bottom: 36px;
+            }
+            @media screen and ( max-width:479px){
+                margin-bottom: 48px;
+            }
+            
+            h1{
+                font-size: 39px;
+                text-align: left;
+                margin-bottom: 48px;
+                line-height: 120%;
+                font-weight: 600;
+                @media screen and ( max-width:767px){
+                    font-size: 34px;
+                }
+            }
+            .button{
+                background-color: $color-fourth;
+                padding:1.2rem 2rem;
+                font-size: 1.1rem;
+                font-weight: 400;
+                cursor: pointer;
+                border-radius: 0.3rem;
+                width: 100%;
+                &:hover{
+                    background-color:$color-button-hover;
+                }
+                
+                
+            }
+        }
+        .payroll-main-img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .payroll-card{
+        background-color: $color-secondary;
+        padding: 140px 80px;
         @media screen and ( max-width: 991px){
-            padding: 60px 36px;
+            padding: 80px 40px;
+        }
+        @media screen and ( max-width: 479px){
+            padding: 80px 16px;
+        }
+        .payroll-card-main{
+            .payroll-card-item{
+                background-color: $color-primary;
+                padding:40px;
+                border-radius: 16px;
+                min-height: 100%;
+                @media screen and ( max-width: 991px){
+                    padding-top: 32px;
+                    padding-right: 32px;
+                    padding-left: 23px;
+                }
+                img{
+                    margin-bottom: 36px;
+                    width: 48px;
+                    height: 48px;
+                }
+                h3{
+                    font-size: 24px;
+                    line-height: 150%;
+                    font-weight: 500;
+                    @media screen and ( max-width: 479px){
+                        font-size: 20px;
+                    }
+                }
+                p{
+                    max-width: 90%;
+                    margin-top: 10px;
+                    color: #adaabf;
+                    font-size: 20px;
+                }
+                
+            }
+            
+        }
+    }
+
+    .payroll-book-demo{
+        background-color: $color-primary;
+        padding: 160px 105px;
+        text-align: center;
+        
+        @media screen and (max-width:991px){
+            padding: 80px 40px;
+        }
+        @media screen and (max-width:767px){
+            padding: 100px 48px;
+        }
+        @media screen and (max-width: 479px){
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+        h2{
+            display: block;
+            font-size: 35px;
+            line-height: 120%;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
+            @media screen and (max-width:767px){
+                font-size: 30px;
+            }
+        }
+        .button{
+                display: inline-block;
+                background-color: $color-fourth;
+                padding: 16px 32px;
+                font-size: 17px;
+                font-weight: 400;
+                cursor: pointer;
+                border-radius: 0.3rem;
+                min-width: 120px;
+                text-align: center;
+                @media screen and (max-width: 479px){
+                    min-width: 100%;
+                }
+                // width: max-content;
+                &:hover{
+                    background-color:$color-button-hover;
+                }
+        }
+
+    }
+
+    .payroll-questions{
+        background-color: $color-secondary;
+        padding: 140px 60px;
+        @media screen and ( max-width: 991px){
+            padding: 80px 36px;
         }
         @media screen and ( max-width: 767px){
-            padding: 40px 16px;
+            padding: 80px 24px;
         }
         @media screen and ( max-width: 479px){
             padding: 60px 16px;
         }
-        .employee-main{
-            max-width: 880px;
-            
-            h1{
-                margin-top: 0;
-                margin-bottom: 24px;
-                color: #0f0d1e;
-                font-size: 56px;
+        .questions-header{
+            @media screen and ( max-width: 991px){
+                margin-bottom: 48px;
+            }
+            h2{
+                font-size: 35px;
                 line-height: 120%;
                 font-weight: 600;
-                text-align: left;
-                @media screen and ( max-width: 991px){
-                    font-size: 48px;
+                @media screen and ( max-width: 767px){
+                    font-size: 42px;
                 }
                 @media screen and ( max-width: 479px){
                     font-size: 32px;
                 }
             }
-            .employee-tag{
-                display: block;
-                margin-bottom: 16px;
-                padding: 6px 12px;
-                border-radius: 4px;
-                background-color: #5b35d5;
-                font-family: Rajdhani,sans-serif;
-                font-size: 18px;
-                font-weight: 400;
-                width: max-content;
-            }
-            .employee-img{
-                width: 100%;
-                display: inline-block;
-                max-width: 100%;
-                height: 480px;
-                margin-top: 32px;
-                border-radius: 16px;
-                object-fit: cover;
-                @media screen and ( max-width: 991px){
-                    height: 400px;
-                }
-            }
-        }
-    }
-    .employee-text{
-        padding: 140px 80px;
-        background-color: #fff;
-        @media screen and ( max-width: 991px){
-            padding: 80px 36px;
-        }
-        @media screen and ( max-width: 767px){
-            padding: 80px 16px;
-        }
-        @media screen and ( max-width: 479px){
-            padding: 60px 16px;
         }
         
-        .employee-text-main{
-            max-width: 720px;
+        .questions-body{
+            padding-left: 32px;
             @media screen and ( max-width: 991px){
-                max-width: 770px;
+                padding-left: 0;
+
             }
-            .employee-text-header{
-                padding-bottom: 24px;
-                display: flex;
-                align-items: center;
-                .author-img{
-                    display: inline-block;
-                    width: 56px;
-                    height: 56px;
-                    border-radius: 50px;
-                    margin-right: 16px;
-                }
-                .author{
-                    p{
-                        display: inline-block;
-                        color: #0f0d1e;
-                        font-size: 18px;
+            .questions-body-item{
+                .item-title{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: 8px;
+                    cursor: pointer;
+                    h5{
+                        font-size: 20px;
+                        line-height: 150%;
                         font-weight: 400;
-                        &:nth-child(2){
-                            margin-left: 8px;
-                            margin-right: 8px;
-                            @media screen and ( max-width: 479px){
-                                display: none;
-                            }
+                        margin-top: 8px;
+                    }
+                    .question-right-arrow{
+                        width: 32px;
+                        height: 32px;
+                        transition: all 0.4s ease;
+                        &.active{
+                            transform: rotate(90deg);
                         }
                     }
                 }
-                
-            }
-            .line{
-                width: 100%;
-                height: 1px;
-                min-height: 0;
-                min-width: 0;
-                margin-top: 8px;
-                margin-bottom: 48px;
-                background-color: #dedcee;
-                @media screen and ( max-width: 991px){
-                    margin-bottom: 32px;
-                }
-            }
-            .employee-text-body{
-                a{
-                    color: #5b35d5;
-                    font-weight: 500;
-                }
-                p{
-                    color: #5b557f;
-                    font-size: 18px;
-                    font-weight: 400;
-                    margin-bottom: 24px;
-                    line-height: 150%;
+                .item-open-box{
+                    width: 580px;
                     
-                }
-                ul{
-                    color: #5b557f;
-                    font-size: 18px;
-                    font-weight: 400;
-                    margin-top: 0;
-                    margin-bottom: 10px;
-                    padding-left: 40px;
-                    li{
-                        list-style-type: disc;
-                        padding-bottom: 8px;
+                    &.active{
+                        display: block;
                     }
-                }
-                strong{
-                    color: #5b557f;
-                    font-size: 18px;
-                    font-weight: 600;
+                    @media screen and ( max-width: 479px){
+                        width: 330px;
+
+                    }
+                    & p{
+                        color: #adaabf;
+                        max-width: 80%;
+                        margin-top: 10px;
+                        font-size: 20px;
+                        margin-bottom: 24px;
+                        line-height: 150%;
+                        & a{
+                            color: #867df3;
+                        }
+                    }
+
+                    &.open-box1{
+                        display: none;
+                        &.active{
+                            display: block;
+
+                        }
+                    }
+                    &.open-box2{
+                        display: none;
+                        &.active{
+                            display: block;
+                        }
+                    }
+                    &.open-box3{
+                        display: none;
+                        &.active{
+                            display: block;
+                        }
+                    }
+                    &.open-box4{
+                        display: none;
+                        &.active{
+                            display: block;
+                        }
+                    }
+
                 }
                 
+            }
+            .questions-footer-text{
+                color: #adaabf;
+                max-width: 80%;
+                margin-top: 10px;
+                font-size: 20px;
+                margin-bottom: 24px;
+                line-height: 150%;
+                & a{
+                    color: #867df3;
+                }
             }
         }
+
     }
+
     footer{
         width: 100%;
         padding: 80px 24px;

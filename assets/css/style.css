@@ -7616,7 +7616,8 @@ body {
               display: block;
               width: 100%;
               padding: 8px 12px;
-              border: 1px solid #ccc; }
+              border: 1px solid #ccc;
+              outline: none; }
             body footer .footer-box .footer-main .footer-right .form .submit-button {
               padding: 10px 20px;
               min-width: 120px;
@@ -8074,7 +8075,8 @@ body {
               display: block;
               width: 100%;
               padding: 8px 12px;
-              border: 1px solid #ccc; }
+              border: 1px solid #ccc;
+              outline: none; }
             body footer .footer-box .footer-main .footer-right .form .submit-button {
               padding: 10px 20px;
               min-width: 120px;
@@ -8630,7 +8632,8 @@ body {
               display: block;
               width: 100%;
               padding: 8px 12px;
-              border: 1px solid #ccc; }
+              border: 1px solid #ccc;
+              outline: none; }
             body footer .footer-box .footer-main .footer-right .form .submit-button {
               padding: 10px 20px;
               min-width: 120px;
@@ -9124,7 +9127,542 @@ body {
               display: block;
               width: 100%;
               padding: 8px 12px;
-              border: 1px solid #ccc; }
+              border: 1px solid #ccc;
+              outline: none; }
+            body footer .footer-box .footer-main .footer-right .form .submit-button {
+              padding: 10px 20px;
+              min-width: 120px;
+              border: 1px solid transparent;
+              border-radius: 4px;
+              background-color: #5b35d5;
+              color: #fff;
+              font-size: 17px;
+              line-height: 150%;
+              font-weight: 400;
+              cursor: pointer; }
+            @media screen and (max-width: 479px) {
+              body footer .footer-box .footer-main .footer-right .form {
+                width: 100%; } }
+          @media screen and (max-width: 991px) {
+            body footer .footer-box .footer-main .footer-right {
+              margin-top: 96px; } }
+      body footer .footer-box .footer-paragraph {
+        font-size: 16px;
+        color: #adaabf;
+        max-width: 80%;
+        min-height: auto;
+        min-width: auto;
+        margin-top: 10px;
+        margin: 0 auto; }
+      body footer .footer-box .social-links {
+        margin-top: 16px; }
+        body footer .footer-box .social-links a {
+          display: inline-block;
+          margin: 0 8px; }
+          body footer .footer-box .social-links a .social-link-icon {
+            width: 30px;
+            height: 30px; }
+
+body {
+  background-color: #0f0d1e; }
+  body header {
+    background-color: #0f0d1e;
+    position: sticky;
+    top: 0;
+    z-index: 999; }
+    body header .header {
+      position: static; }
+      body header .header .hamburger-menu {
+        display: none;
+        cursor: pointer;
+        margin-top: 15px; }
+      body header .header .header-logo {
+        max-width: 100%; }
+      body header .header .nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        body header .header .nav-list li .dropdown-small {
+          position: relative; }
+          body header .header .nav-list li .dropdown-small .small-box {
+            position: absolute;
+            display: flex;
+            display: none;
+            flex-direction: column;
+            background-color: #fff;
+            overflow: auto;
+            white-space: nowrap;
+            max-height: 85vh;
+            min-width: 100%;
+            margin-top: 8px;
+            padding: 24px 16px;
+            border: 1px solid #dedcee;
+            border-radius: 8px; }
+            body header .header .nav-list li .dropdown-small .small-box a {
+              padding: 10px 20px;
+              display: block;
+              color: #222; }
+              body header .header .nav-list li .dropdown-small .small-box a:hover {
+                color: #5b35d5; }
+            body header .header .nav-list li .dropdown-small .small-box.active {
+              display: block;
+              transition: .5s; }
+        body header .header .nav-list li .dropdown-big {
+          position: relative; }
+          body header .header .nav-list li .dropdown-big .big-box {
+            position: absolute;
+            display: flex;
+            display: none;
+            flex-direction: column;
+            background-color: #fff;
+            width: 335px;
+            white-space: nowrap;
+            max-height: 85vh;
+            min-width: 100%;
+            margin-top: 8px;
+            padding: 24px 16px;
+            border: 1px solid #dedcee;
+            border-radius: 8px; }
+            body header .header .nav-list li .dropdown-big .big-box .big-box-headers {
+              margin-bottom: 8px; }
+            body header .header .nav-list li .dropdown-big .big-box a {
+              padding: 10px 24px;
+              display: block;
+              color: #222; }
+              body header .header .nav-list li .dropdown-big .big-box a:hover {
+                color: #5b35d5; }
+            body header .header .nav-list li .dropdown-big .big-box .box-title {
+              color: #0f0d1e;
+              font-size: 18px;
+              line-height: 26px;
+              font-weight: 600; }
+            body header .header .nav-list li .dropdown-big .big-box a.box-title {
+              padding-top: 0;
+              padding-bottom: 4px;
+              padding-left: 0; }
+            body header .header .nav-list li .dropdown-big .big-box.active {
+              display: block; }
+        body header .header .nav-list li .nav-item {
+          padding: 16px;
+          cursor: pointer;
+          margin-left: 8px;
+          display: flex;
+          align-items: center; }
+          body header .header .nav-list li .nav-item .down-icon {
+            filter: invert(1);
+            width: 15px;
+            height: 15px;
+            margin-left: 8px;
+            transition: all 0.4s ease; }
+            body header .header .nav-list li .nav-item .down-icon.active {
+              transform: rotate(180deg); }
+          body header .header .nav-list li .nav-item:hover {
+            background-color: #1b1734;
+            border-radius: 0.3rem; }
+          body header .header .nav-list li .nav-item.button-login {
+            border: 2px solid #322b5f;
+            border-radius: 4px;
+            min-width: min-content;
+            white-space: nowrap; }
+          body header .header .nav-list li .nav-item.button {
+            background-color: #5b35d5;
+            border-radius: 4px;
+            min-width: min-content;
+            white-space: nowrap; }
+            body header .header .nav-list li .nav-item.button:hover {
+              background-color: #7460ef; }
+      @media screen and (max-width: 991px) {
+        body header .header .hamburger-menu {
+          display: block;
+          display: flex;
+          justify-content: flex-end; }
+        body header .header .nav {
+          display: none; } }
+    body header .hamburger-menu-screen {
+      position: absolute;
+      display: none;
+      height: 11721.7px;
+      top: 100%;
+      width: 100%;
+      background-color: #1b1734;
+      overflow: hidden;
+      left: 0;
+      right: 0; }
+      body header .hamburger-menu-screen.active {
+        display: block; }
+      body header .hamburger-menu-screen .screen-box {
+        max-height: 100vh;
+        min-height: 100vh;
+        overflow: auto;
+        padding: 16px 0;
+        text-align: center; }
+        body header .hamburger-menu-screen .screen-box .screen-dropdown {
+          display: block;
+          position: relative;
+          text-align: left;
+          margin-left: auto;
+          margin-right: auto;
+          z-index: 900; }
+        body header .hamburger-menu-screen .screen-box .screen-item {
+          display: block;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-left: 0;
+          margin-right: 0;
+          padding-right: 48px;
+          padding-left: 48px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          border-radius: 4px;
+          line-height: 150%;
+          cursor: pointer; }
+          body header .hamburger-menu-screen .screen-box .screen-item .down-icon {
+            display: block;
+            filter: invert(1);
+            margin-right: 48px;
+            width: 20px;
+            height: 20px;
+            transition: all 0.4s ease; }
+            body header .hamburger-menu-screen .screen-box .screen-item .down-icon.icon-small.active {
+              transform: rotate(180deg); }
+            body header .hamburger-menu-screen .screen-box .screen-item .down-icon.icon-big.active {
+              transform: rotate(180deg); }
+        body header .hamburger-menu-screen .screen-box a.screen-item {
+          position: relative; }
+        body header .hamburger-menu-screen .screen-box .dropdown-open {
+          position: relative;
+          overflow: auto;
+          margin-top: 0;
+          max-height: 40vh;
+          padding: 0 16px; }
+          body header .hamburger-menu-screen .screen-box .dropdown-open .open-box {
+            overflow: hidden;
+            padding-top: 24px;
+            padding-bottom: 24px; }
+            body header .hamburger-menu-screen .screen-box .dropdown-open .open-box .box-link {
+              padding-top: 12px;
+              padding-bottom: 12px;
+              padding-left: 56px;
+              line-height: 150%;
+              display: block; }
+          body header .hamburger-menu-screen .screen-box .dropdown-open .dropdown-links .dropdown-link {
+            margin-bottom: 12px;
+            padding-top: 0;
+            padding-bottom: 4px;
+            padding-left: 0;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 600;
+            display: block; }
+          body header .hamburger-menu-screen .screen-box .dropdown-open.open-small {
+            display: none; }
+            body header .hamburger-menu-screen .screen-box .dropdown-open.open-small.active {
+              display: block; }
+          body header .hamburger-menu-screen .screen-box .dropdown-open.open-big {
+            display: none; }
+            body header .hamburger-menu-screen .screen-box .dropdown-open.open-big.active {
+              display: block; }
+        body header .hamburger-menu-screen .screen-box .dropdown-login {
+          display: inline-block;
+          margin-left: 0;
+          background-color: #0f0d1e;
+          min-height: auto;
+          min-width: auto;
+          margin-right: 0;
+          padding: 12px 24px;
+          border: 2px solid #322b5f;
+          white-space: nowrap;
+          font-size: 17px;
+          line-height: 150%;
+          cursor: pointer; }
+        body header .hamburger-menu-screen .screen-box .dropdown-button {
+          background-color: #5b35d5;
+          border-radius: 4px;
+          border: 1px solid transparent;
+          display: inline-block;
+          position: static;
+          margin-top: 16px;
+          margin-bottom: 24px;
+          margin-right: 0;
+          margin-left: 16px;
+          padding: 12px 24px;
+          font-size: 17px;
+          line-height: 150%;
+          cursor: pointer; }
+  body .payroll-main {
+    padding: 80px; }
+    @media screen and (max-width: 767px) {
+      body .payroll-main {
+        padding: 40px; } }
+    @media screen and (max-width: 479px) {
+      body .payroll-main {
+        padding: 40px 24px; } }
+    @media screen and (max-width: 991px) {
+      body .payroll-main .payroll-main-text {
+        margin-bottom: 36px; } }
+    @media screen and (max-width: 479px) {
+      body .payroll-main .payroll-main-text {
+        margin-bottom: 48px; } }
+    body .payroll-main .payroll-main-text h1 {
+      font-size: 39px;
+      text-align: left;
+      margin-bottom: 48px;
+      line-height: 120%;
+      font-weight: 600; }
+      @media screen and (max-width: 767px) {
+        body .payroll-main .payroll-main-text h1 {
+          font-size: 34px; } }
+    body .payroll-main .payroll-main-text .button {
+      background-color: #5b35d5;
+      padding: 1.2rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 400;
+      cursor: pointer;
+      border-radius: 0.3rem;
+      width: 100%; }
+      body .payroll-main .payroll-main-text .button:hover {
+        background-color: #7460ef; }
+    body .payroll-main .payroll-main-img img {
+      width: 100%; }
+  body .payroll-card {
+    background-color: #1b1734;
+    padding: 140px 80px; }
+    @media screen and (max-width: 991px) {
+      body .payroll-card {
+        padding: 80px 40px; } }
+    @media screen and (max-width: 479px) {
+      body .payroll-card {
+        padding: 80px 16px; } }
+    body .payroll-card .payroll-card-main .payroll-card-item {
+      background-color: #0f0d1e;
+      padding: 40px;
+      border-radius: 16px;
+      min-height: 100%; }
+      @media screen and (max-width: 991px) {
+        body .payroll-card .payroll-card-main .payroll-card-item {
+          padding-top: 32px;
+          padding-right: 32px;
+          padding-left: 23px; } }
+      body .payroll-card .payroll-card-main .payroll-card-item img {
+        margin-bottom: 36px;
+        width: 48px;
+        height: 48px; }
+      body .payroll-card .payroll-card-main .payroll-card-item h3 {
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: 500; }
+        @media screen and (max-width: 479px) {
+          body .payroll-card .payroll-card-main .payroll-card-item h3 {
+            font-size: 20px; } }
+      body .payroll-card .payroll-card-main .payroll-card-item p {
+        max-width: 90%;
+        margin-top: 10px;
+        color: #adaabf;
+        font-size: 20px; }
+  body .payroll-book-demo {
+    background-color: #0f0d1e;
+    padding: 160px 105px;
+    text-align: center; }
+    @media screen and (max-width: 991px) {
+      body .payroll-book-demo {
+        padding: 80px 40px; } }
+    @media screen and (max-width: 767px) {
+      body .payroll-book-demo {
+        padding: 100px 48px; } }
+    @media screen and (max-width: 479px) {
+      body .payroll-book-demo {
+        padding-left: 22px;
+        padding-right: 22px; } }
+    body .payroll-book-demo h2 {
+      display: block;
+      font-size: 35px;
+      line-height: 120%;
+      font-weight: 600;
+      margin-bottom: 2.5rem; }
+      @media screen and (max-width: 767px) {
+        body .payroll-book-demo h2 {
+          font-size: 30px; } }
+    body .payroll-book-demo .button {
+      display: inline-block;
+      background-color: #5b35d5;
+      padding: 16px 32px;
+      font-size: 17px;
+      font-weight: 400;
+      cursor: pointer;
+      border-radius: 0.3rem;
+      min-width: 120px;
+      text-align: center; }
+      @media screen and (max-width: 479px) {
+        body .payroll-book-demo .button {
+          min-width: 100%; } }
+      body .payroll-book-demo .button:hover {
+        background-color: #7460ef; }
+  body .payroll-questions {
+    background-color: #1b1734;
+    padding: 140px 60px; }
+    @media screen and (max-width: 991px) {
+      body .payroll-questions {
+        padding: 80px 36px; } }
+    @media screen and (max-width: 767px) {
+      body .payroll-questions {
+        padding: 80px 24px; } }
+    @media screen and (max-width: 479px) {
+      body .payroll-questions {
+        padding: 60px 16px; } }
+    @media screen and (max-width: 991px) {
+      body .payroll-questions .questions-header {
+        margin-bottom: 48px; } }
+    body .payroll-questions .questions-header h2 {
+      font-size: 35px;
+      line-height: 120%;
+      font-weight: 600; }
+      @media screen and (max-width: 767px) {
+        body .payroll-questions .questions-header h2 {
+          font-size: 42px; } }
+      @media screen and (max-width: 479px) {
+        body .payroll-questions .questions-header h2 {
+          font-size: 32px; } }
+    body .payroll-questions .questions-body {
+      padding-left: 32px; }
+      @media screen and (max-width: 991px) {
+        body .payroll-questions .questions-body {
+          padding-left: 0; } }
+      body .payroll-questions .questions-body .questions-body-item .item-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 8px;
+        cursor: pointer; }
+        body .payroll-questions .questions-body .questions-body-item .item-title h5 {
+          font-size: 20px;
+          line-height: 150%;
+          font-weight: 400;
+          margin-top: 8px; }
+        body .payroll-questions .questions-body .questions-body-item .item-title .question-right-arrow {
+          width: 32px;
+          height: 32px;
+          transition: all 0.4s ease; }
+          body .payroll-questions .questions-body .questions-body-item .item-title .question-right-arrow.active {
+            transform: rotate(90deg); }
+      body .payroll-questions .questions-body .questions-body-item .item-open-box {
+        width: 580px; }
+        body .payroll-questions .questions-body .questions-body-item .item-open-box.active {
+          display: block; }
+        @media screen and (max-width: 479px) {
+          body .payroll-questions .questions-body .questions-body-item .item-open-box {
+            width: 330px; } }
+        body .payroll-questions .questions-body .questions-body-item .item-open-box p {
+          color: #adaabf;
+          max-width: 80%;
+          margin-top: 10px;
+          font-size: 20px;
+          margin-bottom: 24px;
+          line-height: 150%; }
+          body .payroll-questions .questions-body .questions-body-item .item-open-box p a {
+            color: #867df3; }
+        body .payroll-questions .questions-body .questions-body-item .item-open-box.open-box1 {
+          display: none; }
+          body .payroll-questions .questions-body .questions-body-item .item-open-box.open-box1.active {
+            display: block; }
+        body .payroll-questions .questions-body .questions-body-item .item-open-box.open-box2 {
+          display: none; }
+          body .payroll-questions .questions-body .questions-body-item .item-open-box.open-box2.active {
+            display: block; }
+        body .payroll-questions .questions-body .questions-body-item .item-open-box.open-box3 {
+          display: none; }
+          body .payroll-questions .questions-body .questions-body-item .item-open-box.open-box3.active {
+            display: block; }
+        body .payroll-questions .questions-body .questions-body-item .item-open-box.open-box4 {
+          display: none; }
+          body .payroll-questions .questions-body .questions-body-item .item-open-box.open-box4.active {
+            display: block; }
+      body .payroll-questions .questions-body .questions-footer-text {
+        color: #adaabf;
+        max-width: 80%;
+        margin-top: 10px;
+        font-size: 20px;
+        margin-bottom: 24px;
+        line-height: 150%; }
+        body .payroll-questions .questions-body .questions-footer-text a {
+          color: #867df3; }
+  body footer {
+    width: 100%;
+    padding: 80px 24px;
+    text-align: center; }
+    body footer .footer-box {
+      max-width: 1440px; }
+      body footer .footer-box .footer-main {
+        margin-bottom: 40px;
+        text-align: left; }
+        body footer .footer-box .footer-main .footer-left .footer-logo .footer-icon {
+          max-height: 60px;
+          min-width: 60px;
+          width: 100%;
+          height: 100%; }
+          @media screen and (max-width: 991px) {
+            body footer .footer-box .footer-main .footer-left .footer-logo .footer-icon {
+              margin-bottom: 40px; } }
+        body footer .footer-box .footer-main .footer-left .footer-header h2 {
+          color: #adaabf;
+          margin-bottom: 16px;
+          font-family: Rajdhani,sans-serif;
+          font-size: 18px;
+          line-height: 1.5;
+          font-weight: 500;
+          text-align: left;
+          white-space: nowrap;
+          letter-spacing: 1.5px; }
+        body footer .footer-box .footer-main .footer-left .footer-header .footer-link {
+          display: inline-block;
+          margin-bottom: 16px;
+          line-height: 150%;
+          white-space: nowrap; }
+          body footer .footer-box .footer-main .footer-left .footer-header .footer-link:hover {
+            text-decoration: underline; }
+        body footer .footer-box .footer-main .footer-left .footer-header .footer-item {
+          padding: 0 16px;
+          margin-left: 60px; }
+          body footer .footer-box .footer-main .footer-left .footer-header .footer-item ul {
+            margin-bottom: 10px; }
+          @media screen and (max-width: 1280px) {
+            body footer .footer-box .footer-main .footer-left .footer-header .footer-item {
+              margin: 0 auto; } }
+        body footer .footer-box .footer-main .footer-right {
+          max-width: 400px;
+          min-width: auto; }
+          body footer .footer-box .footer-main .footer-right h2 {
+            color: #adaabf;
+            margin-bottom: 16px;
+            font-family: Rajdhani,sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 500;
+            text-align: left;
+            letter-spacing: 1.5px; }
+          body footer .footer-box .footer-main .footer-right .form-paragraph {
+            color: #adaabf;
+            font-size: 16px;
+            max-width: 80%;
+            min-height: auto;
+            min-width: auto;
+            margin: 24px 0;
+            line-height: 150%; }
+          body footer .footer-box .footer-main .footer-right .form {
+            margin-bottom: 15px; }
+            body footer .footer-box .footer-main .footer-right .form .input {
+              height: 48px;
+              margin-bottom: 16px;
+              border-radius: 4px;
+              color: #0f0d1e;
+              font-size: 17px;
+              font-weight: 400;
+              display: block;
+              width: 100%;
+              padding: 8px 12px;
+              border: 1px solid #ccc;
+              outline: none; }
             body footer .footer-box .footer-main .footer-right .form .submit-button {
               padding: 10px 20px;
               min-width: 120px;
