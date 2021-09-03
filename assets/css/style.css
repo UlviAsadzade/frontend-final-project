@@ -9093,3 +9093,139 @@ body {
         line-height: 150%; }
         body .employment-questions .questions-body .questions-footer-text a {
           color: #867df3; }
+
+.login-main {
+  background-color: #fff;
+  color: black; }
+  @media screen and (max-width: 991px) {
+    .login-main {
+      padding-left: 100px;
+      padding-right: 100px; } }
+  @media screen and (max-width: 767px) {
+    .login-main {
+      padding-left: 50px;
+      padding-right: 50px; } }
+  @media screen and (max-width: 479px) {
+    .login-main {
+      padding-left: 0;
+      padding-right: 0; } }
+  .login-main aside {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    @media screen and (max-width: 991px) {
+      .login-main aside {
+        display: none; } }
+    .login-main aside .aside-logo {
+      padding: 24px 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center; }
+      .login-main aside .aside-logo .logo {
+        margin-right: 12px; }
+    .login-main aside .aside-body {
+      width: 316px;
+      margin-bottom: 40px; }
+      .login-main aside .aside-body h3 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #5b557f;
+        text-align: center;
+        line-height: 140%;
+        margin-bottom: 24px; }
+      .login-main aside .aside-body p {
+        font-size: 16px;
+        font-weight: 600;
+        color: #84809f;
+        text-align: center;
+        line-height: 150%; }
+      .login-main aside .aside-body .aside-images {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; }
+        .login-main aside .aside-body .aside-images img {
+          width: 26%;
+          filter: invert(1);
+          opacity: .6; }
+  .login-main .main-body {
+    padding-top: 120px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; }
+    .login-main .main-body h1 {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 140%; }
+    .login-main .main-body p {
+      margin-top: 32px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%; }
+    .login-main .main-body form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 40px;
+      padding-bottom: 40px;
+      width: 350px; }
+      @media screen and (max-width: 991px) {
+        .login-main .main-body form {
+          width: 600px; } }
+      @media screen and (max-width: 767px) {
+        .login-main .main-body form {
+          width: 450px; } }
+      @media screen and (max-width: 479px) {
+        .login-main .main-body form {
+          width: 230px; } }
+      .login-main .main-body form label {
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        padding-bottom: 4px;
+        line-height: 150%; }
+      .login-main .main-body form .password-input {
+        display: flex;
+        justify-content: space-between; }
+      .login-main .main-body form .label-hidden {
+        display: none; }
+      .login-main .main-body form input {
+        font-size: 16px;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        border: 1px solid rgba(59, 130, 246, 0.5);
+        border-radius: 4px;
+        line-height: 150%;
+        margin-bottom: 20px;
+        outline: none; }
+      .login-main .main-body form .error {
+        color: red;
+        font-size: 14px;
+        margin-top: -18px;
+        margin-bottom: 15px; }
+      .login-main .main-body form button {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        padding: 0.5rem 1rem;
+        transition-duration: 100ms;
+        border-radius: 4px;
+        font-weight: 500;
+        margin-bottom: 24px;
+        background-color: #5b35d5;
+        cursor: pointer;
+        border: none;
+        color: white; }
+        .login-main .main-body form button:hover {
+          background-color: #7460ef; }
+      .login-main .main-body form a {
+        color: #5b35d5;
+        text-decoration: underline;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%; }

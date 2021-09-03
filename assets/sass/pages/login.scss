@@ -1,0 +1,158 @@
+.login-main{
+    background-color: $color-white;
+    color: black;
+    @media screen and (max-width:991px){
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    @media screen and (max-width:767px){
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    @media screen and (max-width:479px){
+        padding-left: 0;
+        padding-right: 0;
+    }
+    aside{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width:991px){
+            display: none;
+        }
+        .aside-logo{
+            padding: 24px 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            .logo{
+                margin-right: 12px;
+            }
+        }
+        .aside-body{
+            width: 316px;
+            margin-bottom: 40px;
+            h3{
+                font-size: 24px;
+                font-weight: 600;
+                color: rgb(91, 85, 127);
+                text-align: center;
+                line-height: 140%;
+                margin-bottom: 24px;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 600;
+                color: rgb(132, 128, 159);
+                text-align: center;
+                line-height: 150%;
+            }
+            .aside-images{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                img{
+                    width: 26%;
+                    filter: invert(1);
+                    opacity: .6;
+                }
+            }
+        }
+    }
+    .main-body{
+        padding-top: 120px;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        h1{
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 140%;
+        }
+        p{
+            margin-top: 32px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-bottom: 40px;
+            width: 350px;
+            @media screen and (max-width:991px){
+                width: 600px;
+            }
+            @media screen and (max-width:767px){
+                width: 450px;
+            }
+            @media screen and (max-width:479px){
+                width: 230px;
+            }
+            label{
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                padding-bottom: 4px;
+                line-height: 150%;
+            }
+            .password-input{
+                display: flex;
+                justify-content: space-between;
+            }
+            .label-hidden{
+                display: none;
+            }
+            input{
+                font-size: 16px;
+                padding: 0.5rem 1rem;
+                width: 100%;
+                border: 1px solid rgba(59,130,246,0.5);
+                border-radius: 4px;
+                line-height: 150%;
+                margin-bottom: 20px;
+                outline: none;
+            }
+            .error{
+                color: red;
+                font-size: 14px;
+                margin-top: -18px;
+                margin-bottom: 15px;
+            }
+            button{
+                margin-top: 24px;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: center;
+                padding: 0.5rem 1rem;
+                transition-duration: 100ms;
+                border-radius: 4px;
+                font-weight: 500;
+                margin-bottom: 24px;
+                background-color: $color-fourth;
+                cursor: pointer;
+                border: none;
+                color: white;
+                &:hover{
+                    background-color:$color-button-hover;
+                }
+            }
+            a{
+                color: $color-fourth;
+                text-decoration: underline;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 150%;
+            }
+
+        }
+    }
+}
