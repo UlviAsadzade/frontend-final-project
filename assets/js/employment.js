@@ -50,3 +50,27 @@ clickBig.addEventListener('click', function(){
     openBig.classList.toggle('active');
     menuIconBig.classList.toggle('active');
 })
+
+
+// tab-content
+
+const tabContentHeaders = Array.from(document.querySelectorAll('.tab-content-header a'));
+const tabContentBoxes = Array.from(document.querySelectorAll('.tab-content-box'));
+const clearActives = () => {
+    tabContentHeaders.forEach(tabContentHeader => {
+        tabContentHeader.classList.remove('active');
+    });
+    tabContentBoxes.forEach(tabContentBox => {
+        tabContentBox.classList.remove('active');
+    });
+}
+tabContentHeaders.forEach(tabContentHeader => {
+    tabContentHeader.onclick = function (e) {
+        clearActives();
+        e.preventDefault();
+        const targetId = tabContentHeader.getAttribute('data-target')
+        const targetContent = document.getElementById(targetId);
+        tabContentHeader.classList.add('active');
+        targetContent.classList.add('active');
+    }
+});
