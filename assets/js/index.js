@@ -76,7 +76,7 @@ Close.addEventListener("click", () => {
 })
 
 
-// tab list
+// tab list testimonials
 const testimonialsPersons = Array.from(document.querySelectorAll('.testimonials-persons a'));
 const personsTexts = Array.from(document.querySelectorAll('.person-text'));
 const clearActives = () => {

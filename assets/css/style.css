@@ -8585,19 +8585,19 @@ body {
         body .employment-tab .tab-row .employment-tab-content .tab-content-body .tab-content-box .tab-content-box-img img {
           max-width: 100%;
           border-radius: 16px; }
-  body .employment-benefits {
+  body .employment-benefits-founder {
     background-color: #1b1734;
     padding: 140px 64px; }
     @media screen and (max-width: 991px) {
-      body .employment-benefits {
+      body .employment-benefits-founder {
         padding: 80px 36px; } }
     @media screen and (max-width: 767px) {
-      body .employment-benefits {
+      body .employment-benefits-founder {
         padding: 80px 16px; } }
     @media screen and (max-width: 479px) {
-      body .employment-benefits {
+      body .employment-benefits-founder {
         padding: 60px 12px; } }
-    body .employment-benefits h5 {
+    body .employment-benefits-founder h5 {
       width: max-content;
       font-family: "Roboto", sans-serif;
       margin-bottom: 40px;
@@ -8609,30 +8609,30 @@ body {
       line-height: 25px;
       font-weight: 400; }
       @media screen and (max-width: 479px) {
-        body .employment-benefits h5 {
+        body .employment-benefits-founder h5 {
           font-size: 12px; } }
-    body .employment-benefits h2 {
+    body .employment-benefits-founder h2 {
       margin-bottom: 20px;
       font-size: 30px;
       line-height: 40px;
       font-weight: 600; }
       @media screen and (max-width: 991px) {
-        body .employment-benefits h2 {
+        body .employment-benefits-founder h2 {
           margin-bottom: 32px; } }
       @media screen and (max-width: 479px) {
-        body .employment-benefits h2 {
+        body .employment-benefits-founder h2 {
           margin-bottom: 26px; } }
-    body .employment-benefits ul li {
+    body .employment-benefits-founder ul li {
       display: flex;
       margin-bottom: 16px; }
-      body .employment-benefits ul li p {
+      body .employment-benefits-founder ul li p {
         padding-left: 10px;
         font-size: 14px;
         line-height: 20px; }
-      body .employment-benefits ul li img {
+      body .employment-benefits-founder ul li img {
         width: 20px;
         height: 20px; }
-    body .employment-benefits .contact-button {
+    body .employment-benefits-founder .contact-button {
       display: inline-block;
       width: max-content;
       padding: 16px 32px;
@@ -8641,8 +8641,455 @@ body {
       font-size: 16px;
       background-color: #5b35d5;
       transition: .3s; }
-      body .employment-benefits .contact-button:hover {
+      body .employment-benefits-founder .contact-button:hover {
         background-color: #7460ef; }
       @media screen and (max-width: 991px) {
-        body .employment-benefits .contact-button {
+        body .employment-benefits-founder .contact-button {
           margin-top: 32px; } }
+      @media screen and (max-width: 479px) {
+        body .employment-benefits-founder .contact-button {
+          width: 100%;
+          text-align: center; } }
+  body .employment-benefits-hr-professional {
+    background-color: #0f0d1e;
+    padding: 140px 64px; }
+    @media screen and (max-width: 991px) {
+      body .employment-benefits-hr-professional {
+        padding: 80px 36px; } }
+    @media screen and (max-width: 767px) {
+      body .employment-benefits-hr-professional {
+        padding: 80px 16px; } }
+    @media screen and (max-width: 479px) {
+      body .employment-benefits-hr-professional {
+        padding: 60px 12px; } }
+    body .employment-benefits-hr-professional .hr-professional-body h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 600; }
+      @media screen and (max-width: 991px) {
+        body .employment-benefits-hr-professional .hr-professional-body h2 {
+          margin-bottom: 32px; } }
+      @media screen and (max-width: 479px) {
+        body .employment-benefits-hr-professional .hr-professional-body h2 {
+          margin-bottom: 26px; } }
+    body .employment-benefits-hr-professional .hr-professional-body ul li {
+      display: flex;
+      margin-bottom: 16px; }
+      body .employment-benefits-hr-professional .hr-professional-body ul li p {
+        padding-left: 10px;
+        font-size: 14px;
+        line-height: 20px; }
+      body .employment-benefits-hr-professional .hr-professional-body ul li img {
+        width: 20px;
+        height: 20px; }
+    body .employment-benefits-hr-professional .hr-professional-body .contact-button {
+      display: inline-block;
+      width: max-content;
+      padding: 16px 32px;
+      margin-top: 40px;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: transparent;
+      border: 1px solid white;
+      transition: .3s; }
+      body .employment-benefits-hr-professional .hr-professional-body .contact-button:hover {
+        background-color: rgba(255, 255, 255, 0.1); }
+      @media screen and (max-width: 991px) {
+        body .employment-benefits-hr-professional .hr-professional-body .contact-button {
+          margin-top: 32px; } }
+      @media screen and (max-width: 479px) {
+        body .employment-benefits-hr-professional .hr-professional-body .contact-button {
+          width: 100%;
+          text-align: center; } }
+    body .employment-benefits-hr-professional .latest-news {
+      margin-top: 120px;
+      padding: 48px;
+      border-radius: 16px;
+      background-color: #5b35d5; }
+      @media screen and (max-width: 991px) {
+        body .employment-benefits-hr-professional .latest-news {
+          padding: 40px; } }
+      @media screen and (max-width: 991px) {
+        body .employment-benefits-hr-professional .latest-news {
+          padding-left: 24px;
+          padding-right: 24px;
+          margin-top: 80px; } }
+      body .employment-benefits-hr-professional .latest-news h5 {
+        width: max-content;
+        margin-bottom: 16px;
+        background-color: transparent;
+        color: #f7f5fd;
+        padding: 4px 12px;
+        border-radius: 4px;
+        letter-spacing: .6px;
+        font-family: Roboto,sans-serif;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        border: 1px solid #f7f5fd; }
+      body .employment-benefits-hr-professional .latest-news h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+        font-weight: 600; }
+        @media screen and (max-width: 991px) {
+          body .employment-benefits-hr-professional .latest-news h2 {
+            margin-bottom: 32px;
+            font-size: 26px; } }
+      body .employment-benefits-hr-professional .latest-news .button {
+        width: max-content;
+        background-color: #0f0d1e;
+        display: inline-block;
+        padding: 16px 32px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        transition: .3s;
+        font-size: 16px;
+        min-width: 160px; }
+        body .employment-benefits-hr-professional .latest-news .button:hover {
+          background-color: #272635; }
+        @media screen and (max-width: 479px) {
+          body .employment-benefits-hr-professional .latest-news .button {
+            width: 100%;
+            text-align: center; } }
+  body .testimonials {
+    background-color: #5b35d5;
+    padding: 140px 48px; }
+    @media screen and (max-width: 991px) {
+      body .testimonials {
+        padding: 80px 48px; } }
+    @media screen and (max-width: 767px) {
+      body .testimonials {
+        padding-top: 60px;
+        padding-bottom: 60px; } }
+    @media screen and (max-width: 479px) {
+      body .testimonials {
+        padding: 40px 20px; } }
+    body .testimonials .testimonials-header {
+      margin-bottom: 4rem; }
+      body .testimonials .testimonials-header h2 {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 600;
+        line-height: 120%; }
+        @media screen and (max-width: 767px) {
+          body .testimonials .testimonials-header h2 {
+            font-size: 30px; } }
+    body .testimonials .testimonials-body {
+      margin-top: 48px;
+      max-width: none;
+      margin-left: auto;
+      margin-right: auto; }
+      body .testimonials .testimonials-body .testimonials-persons {
+        display: flex;
+        justify-content: center; }
+        @media screen and (max-width: 991px) {
+          body .testimonials .testimonials-body .testimonials-persons {
+            display: flex;
+            justify-content: space-between; } }
+        @media screen and (max-width: 479px) {
+          body .testimonials .testimonials-body .testimonials-persons {
+            display: flex;
+            justify-content: left;
+            width: 50%; } }
+        body .testimonials .testimonials-body .testimonials-persons a {
+          display: flex;
+          margin-right: 16px;
+          margin-left: 16px;
+          padding: 24px 32px;
+          align-items: center;
+          border-style: none none solid;
+          border-bottom-width: 2px;
+          border-color: transparent;
+          border-radius: 0;
+          background-color: transparent;
+          opacity: .64;
+          cursor: pointer; }
+          @media screen and (max-width: 991px) {
+            body .testimonials .testimonials-body .testimonials-persons a {
+              margin-left: 0;
+              padding-left: 16px; } }
+          @media screen and (max-width: 767px) {
+            body .testimonials .testimonials-body .testimonials-persons a {
+              margin-left: 0;
+              padding-left: 8px; } }
+          @media screen and (max-width: 479px) {
+            body .testimonials .testimonials-body .testimonials-persons a {
+              flex-direction: column; } }
+          body .testimonials .testimonials-body .testimonials-persons a .person-img {
+            display: inline-block;
+            height: 60px;
+            margin-right: 16px;
+            border-radius: 0; }
+            @media screen and (max-width: 767px) {
+              body .testimonials .testimonials-body .testimonials-persons a .person-img {
+                height: 48px; } }
+          body .testimonials .testimonials-body .testimonials-persons a .person-name {
+            font-size: 18px;
+            font-weight: 500; }
+            @media screen and (max-width: 767px) {
+              body .testimonials .testimonials-body .testimonials-persons a .person-name {
+                font-size: 16px;
+                margin-top: 3px; } }
+          body .testimonials .testimonials-body .testimonials-persons a.active {
+            opacity: 1;
+            border-bottom-color: #ff9a83; }
+      body .testimonials .testimonials-body .testimonials-box {
+        background-color: #fff;
+        padding: 80px 120px 64px;
+        border-radius: 16px;
+        position: relative;
+        overflow: hidden; }
+        @media screen and (max-width: 991px) {
+          body .testimonials .testimonials-body .testimonials-box {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0; } }
+        @media screen and (max-width: 767px) {
+          body .testimonials .testimonials-body .testimonials-box {
+            padding: 48px 48px 32px; } }
+        @media screen and (max-width: 479px) {
+          body .testimonials .testimonials-body .testimonials-box {
+            padding-right: 32px;
+            padding-bottom: 24px;
+            padding-left: 32px; } }
+        body .testimonials .testimonials-body .testimonials-box .person-text {
+          position: relative;
+          max-width: 720px;
+          display: none;
+          margin: 0 auto; }
+          body .testimonials .testimonials-body .testimonials-box .person-text .text-paragraph {
+            color: #0f0d1e;
+            margin-bottom: 16px;
+            font-size: 24px;
+            line-height: 170%;
+            font-weight: 300;
+            text-align: center; }
+          body .testimonials .testimonials-body .testimonials-box .person-text .person-info {
+            color: #5b35d5;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 24px;
+            line-height: 150%; }
+          body .testimonials .testimonials-body .testimonials-box .person-text.active {
+            display: block;
+            transition: opacity 300ms ease 0s; }
+  body .employment-contact {
+    padding: 140px 64px; }
+    @media screen and (max-width: 991px) {
+      body .employment-contact {
+        padding: 80px 48px; } }
+    @media screen and (max-width: 767px) {
+      body .employment-contact {
+        padding: 80px 16px; } }
+    @media screen and (max-width: 479px) {
+      body .employment-contact {
+        padding: 60px 10px; } }
+    body .employment-contact .employment-contact-header h2 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      font-weight: 600; }
+      @media screen and (max-width: 767px) {
+        body .employment-contact .employment-contact-header h2 {
+          font-size: 26px; } }
+    body .employment-contact .employment-contact-header .button {
+      display: inline-block;
+      min-width: 160px;
+      padding: 16px 32px;
+      border-radius: 4px;
+      background-color: #5b35d5;
+      transition: .3s;
+      font-size: 16px;
+      text-align: center; }
+      body .employment-contact .employment-contact-header .button:hover {
+        background-color: #7460ef; }
+      @media screen and (max-width: 479px) {
+        body .employment-contact .employment-contact-header .button {
+          min-width: 100%; } }
+    body .employment-contact .employment-contact-form {
+      background-color: #fff;
+      color: #0f0d1e;
+      border-radius: 16px;
+      width: 85%;
+      padding: 40px;
+      margin: 0 auto; }
+      @media screen and (max-width: 991px) {
+        body .employment-contact .employment-contact-form {
+          padding: 32px; } }
+      @media screen and (max-width: 767px) {
+        body .employment-contact .employment-contact-form {
+          margin-top: 64px;
+          width: 100%; } }
+      @media screen and (max-width: 479px) {
+        body .employment-contact .employment-contact-form {
+          padding: 32px 24px; } }
+      body .employment-contact .employment-contact-form form {
+        display: flex;
+        flex-direction: column;
+        color: #0f0d1e; }
+        body .employment-contact .employment-contact-form form .form-h2 {
+          margin-bottom: 40px;
+          color: #0f0d1e;
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 50px; }
+          @media screen and (max-width: 767px) {
+            body .employment-contact .employment-contact-form form .form-h2 {
+              margin-top: 0;
+              font-size: 32px; } }
+          @media screen and (max-width: 479px) {
+            body .employment-contact .employment-contact-form form .form-h2 {
+              font-size: 28px; } }
+        body .employment-contact .employment-contact-form form .form-label {
+          margin-bottom: 8px;
+          font-size: 16px;
+          font-weight: 400;
+          color: #0f0d1e; }
+          body .employment-contact .employment-contact-form form .form-label span {
+            color: #7460ef; }
+        body .employment-contact .employment-contact-form form .form-input {
+          margin-bottom: 16px;
+          min-height: 50px;
+          border: 1px solid rgba(15, 13, 30, 0.2);
+          border-radius: 4px;
+          padding: 8px 12px;
+          outline: none; }
+          body .employment-contact .employment-contact-form form .form-input::-webkit-input-placeholder {
+            color: #0f0d1e;
+            opacity: 0.4;
+            font-size: 16px; }
+        body .employment-contact .employment-contact-form form .textarea-label {
+          margin-bottom: 8px;
+          font-size: 16px;
+          font-weight: 400;
+          color: #0f0d1e; }
+        body .employment-contact .employment-contact-form form textarea {
+          margin-bottom: 40px;
+          min-height: 120px;
+          border: 1px solid rgba(15, 13, 30, 0.2);
+          border-radius: 4px;
+          padding: 8px 12px;
+          outline: none; }
+          body .employment-contact .employment-contact-form form textarea::-webkit-input-placeholder {
+            color: #0f0d1e;
+            opacity: 0.4;
+            font-size: 16px;
+            font-family: Inter; }
+        body .employment-contact .employment-contact-form form .submit-input {
+          display: inline-block;
+          min-width: 160px;
+          padding: 16px 32px;
+          border: 1px solid transparent;
+          border-radius: 4px;
+          background-color: #5b35d5;
+          transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          color: #fff;
+          font-size: 16px;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer; }
+          body .employment-contact .employment-contact-form form .submit-input:hover {
+            background-color: #7460ef; }
+        body .employment-contact .employment-contact-form form .checkbox {
+          margin-top: 16px;
+          display: flex;
+          align-items: center; }
+          body .employment-contact .employment-contact-form form .checkbox .checkbox-input {
+            width: 20px;
+            margin-right: 12px;
+            border-radius: 4px;
+            height: 20px; }
+          body .employment-contact .employment-contact-form form .checkbox .checkbox-label {
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #0f0d1e;
+            cursor: pointer; }
+  body .employment-questions {
+    background-color: #1b1734;
+    padding: 140px 60px; }
+    @media screen and (max-width: 991px) {
+      body .employment-questions {
+        padding: 80px 36px; } }
+    @media screen and (max-width: 767px) {
+      body .employment-questions {
+        padding: 80px 24px; } }
+    @media screen and (max-width: 479px) {
+      body .employment-questions {
+        padding: 60px 16px; } }
+    @media screen and (max-width: 991px) {
+      body .employment-questions .questions-header {
+        margin-bottom: 48px; } }
+    body .employment-questions .questions-header h2 {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 600; }
+      @media screen and (max-width: 991px) {
+        body .employment-questions .questions-header h2 {
+          font-size: 26px; } }
+    body .employment-questions .questions-body {
+      padding-left: 32px; }
+      @media screen and (max-width: 991px) {
+        body .employment-questions .questions-body {
+          padding-left: 0; } }
+      body .employment-questions .questions-body .questions-body-item {
+        margin-bottom: 36px; }
+        body .employment-questions .questions-body .questions-body-item .item-title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 8px;
+          cursor: pointer; }
+          body .employment-questions .questions-body .questions-body-item .item-title h4 {
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 400; }
+          body .employment-questions .questions-body .questions-body-item .item-title .question-right-arrow {
+            width: 32px;
+            height: 32px;
+            transition: all 0.4s ease; }
+            body .employment-questions .questions-body .questions-body-item .item-title .question-right-arrow.active {
+              transform: rotate(90deg); }
+        body .employment-questions .questions-body .questions-body-item .item-open-box {
+          width: 580px; }
+          body .employment-questions .questions-body .questions-body-item .item-open-box.active {
+            display: block; }
+          @media screen and (max-width: 479px) {
+            body .employment-questions .questions-body .questions-body-item .item-open-box {
+              width: 330px; } }
+          body .employment-questions .questions-body .questions-body-item .item-open-box p {
+            color: #adaabf;
+            max-width: 80%;
+            margin-top: 10px;
+            font-size: 18px;
+            margin-bottom: 24px;
+            line-height: 150%; }
+            body .employment-questions .questions-body .questions-body-item .item-open-box p a {
+              color: #867df3; }
+          body .employment-questions .questions-body .questions-body-item .item-open-box.open-box1 {
+            display: none; }
+            body .employment-questions .questions-body .questions-body-item .item-open-box.open-box1.active {
+              display: block; }
+          body .employment-questions .questions-body .questions-body-item .item-open-box.open-box2 {
+            display: none; }
+            body .employment-questions .questions-body .questions-body-item .item-open-box.open-box2.active {
+              display: block; }
+          body .employment-questions .questions-body .questions-body-item .item-open-box.open-box3 {
+            display: none; }
+            body .employment-questions .questions-body .questions-body-item .item-open-box.open-box3.active {
+              display: block; }
+          body .employment-questions .questions-body .questions-body-item .item-open-box.open-box4 {
+            display: none; }
+            body .employment-questions .questions-body .questions-body-item .item-open-box.open-box4.active {
+              display: block; }
+      body .employment-questions .questions-body .questions-footer-text {
+        color: #adaabf;
+        max-width: 80%;
+        margin-top: 10px;
+        font-size: 20px;
+        margin-bottom: 24px;
+        line-height: 150%; }
+        body .employment-questions .questions-body .questions-footer-text a {
+          color: #867df3; }

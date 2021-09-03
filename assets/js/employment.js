@@ -56,7 +56,7 @@ clickBig.addEventListener('click', function(){
 
 const tabContentHeaders = Array.from(document.querySelectorAll('.tab-content-header a'));
 const tabContentBoxes = Array.from(document.querySelectorAll('.tab-content-box'));
-const clearActives = () => {
+const clearActivesContents = () => {
     tabContentHeaders.forEach(tabContentHeader => {
         tabContentHeader.classList.remove('active');
     });
@@ -66,7 +66,7 @@ const clearActives = () => {
 }
 tabContentHeaders.forEach(tabContentHeader => {
     tabContentHeader.onclick = function (e) {
-        clearActives();
+        clearActivesContents();
         e.preventDefault();
         const targetId = tabContentHeader.getAttribute('data-target')
         const targetContent = document.getElementById(targetId);
@@ -74,3 +74,60 @@ tabContentHeaders.forEach(tabContentHeader => {
         targetContent.classList.add('active');
     }
 });
+
+
+// tab list testimonials
+const testimonialsPersons = Array.from(document.querySelectorAll('.testimonials-persons a'));
+const personsTexts = Array.from(document.querySelectorAll('.person-text'));
+const clearActives = () => {
+    testimonialsPersons.forEach(testimonialsPerson => {
+        testimonialsPerson.classList.remove('active');
+    });
+    personsTexts.forEach(personsText => {
+        personsText.classList.remove('active');
+    });
+}
+testimonialsPersons.forEach(testimonialsPerson => {
+    testimonialsPerson.onclick = function () {
+        clearActives();
+        const targetId = testimonialsPerson.getAttribute('data-target')
+        const targetContent = document.getElementById(targetId);
+        testimonialsPerson.classList.add('active');
+        targetContent.classList.add('active');
+    }
+});
+
+
+// questions section
+
+const questionItem1 = document.querySelector('.questions-body-item.item1');
+const openBox1 = document.querySelector('.item-open-box.open-box1');;
+const rightArrow1 = document.querySelector('.questions-body-item.item1 .question-right-arrow');
+questionItem1.onclick=function(){
+    openBox1.classList.toggle('active');
+    rightArrow1.classList.toggle('active')
+}
+
+const questionItem2 = document.querySelector('.questions-body-item.item2');
+const openBox2 = document.querySelector('.item-open-box.open-box2');;
+const rightArrow2 = document.querySelector('.questions-body-item.item2 .question-right-arrow');
+questionItem2.onclick=function(){
+    openBox2.classList.toggle('active');
+    rightArrow2.classList.toggle('active')
+}
+
+const questionItem3 = document.querySelector('.questions-body-item.item3');
+const openBox3 = document.querySelector('.item-open-box.open-box3');;
+const rightArrow3 = document.querySelector('.questions-body-item.item3 .question-right-arrow');
+questionItem3.onclick=function(){
+    openBox3.classList.toggle('active');
+    rightArrow3.classList.toggle('active')
+}
+
+const questionItem4 = document.querySelector('.questions-body-item.item4');
+const openBox4 = document.querySelector('.item-open-box.open-box4');;
+const rightArrow4 = document.querySelector('.questions-body-item.item4 .question-right-arrow');
+questionItem4.onclick=function(){
+    openBox4.classList.toggle('active');
+    rightArrow4.classList.toggle('active')
+}
